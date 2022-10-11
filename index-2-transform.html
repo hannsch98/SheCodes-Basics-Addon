@@ -4,9 +4,68 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			body {
+				margin: 0 auto;
+				text-align: center;
+			}
+			.img01,
+			.img03 {
+				width: 200px;
+				transition: all 400ms ease;
+			}
+
+			.img02,
+			.img04 {
+				width: 400px;
+				transition: all 1000ms ease;
+			}
+
+			.img01 {
+				transform: scale(2);
+				opacity: 0.5;
+				cursor: pointer;
+			}
+
+			.img02 {
+				transform: scale(2) rotateZ(300deg) translate(170px, 100px);
+				cursor: pointer;
+			}
+
+			.img03 {
+				transform: scale(0.5) rotateZ(360deg);
+				border: 50px solid purple;
+				cursor: pointer;
+			}
+
+			.img04 {
+				transform: scale(2) skew(180deg, 0deg);
+				border: 5px solid black;
+				cursor: pointer;
+			}
+		</style>
 		<title>Week2 - Transform</title>
 	</head>
 	<body>
-		Hi
+		<img
+			src="https://images.unsplash.com/photo-1609793654930-1bfbefe939d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80"
+			alt="Photo by Andreas Dress on Unsplash"
+			class="img01"
+		/><br />
+		<img
+			src="https://images.unsplash.com/photo-1614270858086-c9e2af8d5195?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1584&q=80"
+			alt="Photo by Eirik Skarstein on Unsplash"
+			class="img02"
+		/><br />
+		<img
+			src="https://images.unsplash.com/photo-1614270857866-191c0bc3cb54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1007&q=80"
+			alt="Photo by Eirik Skarstein on Unsplash"
+			class="img03"
+		/><br />
+		<img
+			src="https://images.unsplash.com/photo-1589110211335-319c28fe49e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80"
+			alt="Photo by Nick Night on Unsplash"
+			class="img04"
+		/>
 	</body>
 </html>
