@@ -13,6 +13,16 @@
 				display: grid;
 				grid-template-columns: 200px 200px 200px 200px;
 				column-gap: 20px;
+				background-color: green;
+			}
+
+			.blue {
+				background-color: blue;
+			}
+
+			button {
+				margin-top: 20px;
+				font-size: 20px;
 			}
 		</style>
 		<title>Week1 - Grids</title>
@@ -40,5 +50,24 @@
 				class="img03"
 			/>
 		</div>
+		<button class="blue-button">Make it blue!</button>
+		<button class="reset-button">Reset</button>
+		<script>
+			function makeItBlue() {
+				let box = document.querySelector(".grid");
+				box.classList.add("blue");
+			}
+
+			function reset() {
+				let box = document.querySelector(".grid");
+				box.classList.remove("blue");
+			}
+
+			let button1 = document.querySelector(".blue-button");
+			button1.addEventListener("click", makeItBlue);
+
+			let button2 = document.querySelector(".reset-button");
+			button2.addEventListener("click", reset);
+		</script>
 	</body>
 </html>
