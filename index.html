@@ -22,13 +22,15 @@
 				font-size: 16px;
 			}
 
-			a {
+			a.link {
 				color: #0057b0;
+				transition: all 150ms ease-in-out;
 			}
 
-			a:hover {
+			a.link:hover {
 				background-color: #7198c0;
 				color: white;
+				font-size: 20px;
 			}
 
 			.container {
@@ -47,11 +49,13 @@
 				display: block;
 				margin: 0 auto;
 				padding: 5px 10px;
+				transition: all 150ms ease-in-out;
 			}
 
 			.order-btn a {
 				color: #0057b0;
 				text-decoration: none;
+				transition: all 150ms ease-in-out;
 			}
 
 			.order-btn a:hover {
@@ -60,6 +64,7 @@
 
 			.order-btn:hover {
 				background-color: #7198c0;
+				transform: scale(1.5);
 			}
 
 			.theme-btn {
@@ -68,12 +73,23 @@
 				border-radius: 20px;
 				color: white;
 				padding: 10px 20px;
+				transition: all 150ms ease-in-out;
 			}
 
 			.theme-btn:hover {
 				background-color: white;
 				color: black;
 				cursor: pointer;
+				transform: scale(1.5);
+			}
+
+			.crochet-photo-link {
+				transition: all 150ms ease-in-out;
+				border-radius: 10px;
+			}
+
+			.crochet-photo-link:hover {
+				opacity: 0.5;
 			}
 		</style>
 	</head>
@@ -91,7 +107,10 @@
 					name is derived from the French term crochet, meaning 'small hook'.
 					Hooks can be made from a variety of materials, such as metal, wood,
 					bamboo, or plastic.
-					<a href="https://en.wikipedia.org/wiki/Crochet" target="_blank"
+					<a
+						href="https://en.wikipedia.org/wiki/Crochet"
+						target="_blank"
+						class="link"
 						>Click here to learn more</a
 					>
 				</p>
@@ -100,22 +119,37 @@
 						>Get your yarn right away!</a
 					></button
 				><br />
-				<img
-					src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/048/original/merylove-art-zWWDco7uCu0-unsplash.jpg?1666017170"
-				/>
-				<img
-					src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/047/original/joony-VleAEtGmQH0-unsplash.jpg?1666017158"
-				/>
-				<img
-					src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/046/original/imani-_TuIdedBPwQ-unsplash.jpg?1666017141"
-				/>
-				<img
-					src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/045/original/dario-gomes-lher3yguqVA-unsplash.jpg?1666017131"
-				/>
+				<a href="https://unsplash.com/photos/zWWDco7uCu0" target="_blank">
+					<img
+						src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/048/original/merylove-art-zWWDco7uCu0-unsplash.jpg?1666017170"
+						class="crochet-photo-link"
+					/>
+				</a>
+				<a href="https://unsplash.com/photos/VleAEtGmQH0" target="_blank">
+					<img
+						src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/047/original/joony-VleAEtGmQH0-unsplash.jpg?1666017158"
+						class="crochet-photo-link"
+					/>
+				</a>
+				<a href="https://unsplash.com/photos/_TuIdedBPwQ" target="_blank">
+					<img
+						src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/046/original/imani-_TuIdedBPwQ-unsplash.jpg?1666017141"
+						class="crochet-photo-link"
+					/>
+				</a>
+				<a href="https://unsplash.com/photos/lher3yguqVA" target="_blank">
+					<img
+						src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/045/original/dario-gomes-lher3yguqVA-unsplash.jpg?1666017131"
+						class="crochet-photo-link"
+					/>
+				</a>
 			</main>
 			<footer>
 				© Hanna Schimek, 2022.
-				<a href="https://github.com/hannsch98/SheCodes-Basics-Addon">
+				<a
+					href="https://github.com/hannsch98/SheCodes-Basics-Addon"
+					class="link"
+				>
 					Source Code on Github
 				</a>
 			</footer>
