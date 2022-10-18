@@ -11,9 +11,13 @@
 			}
 
 			body {
-				text-align: center;
-				background-color: #a4d1fd;
+				background: linear-gradient(
+					109.6deg,
+					rgb(204, 228, 247) 11.2%,
+					rgb(237, 246, 250) 100.2%
+				);
 				font-size: large;
+				text-align: center;
 			}
 
 			footer {
@@ -38,7 +42,7 @@
 				background-color: white;
 				border-radius: 25px;
 				padding: 10px 25px;
-				margin: 10px auto;
+				margin: 20px auto;
 				max-width: 800px;
 			}
 
@@ -102,9 +106,63 @@
 			.grid img {
 				height: 100%;
 			}
+
+			.dark {
+				background: linear-gradient(to top, #09203f 0%, #537895 100%);
+			}
+
+			.dark .container {
+				background-color: #343434;
+				color: white;
+			}
+
+			.dark a.link {
+				color: #a4d1fd;
+				transition: all 150ms ease-in-out;
+			}
+
+			.dark a.link:hover {
+				background-color: #a4d1fd;
+				color: #343434;
+			}
+
+			.dark .order-btn {
+				background-color: #343434;
+				border: 2px solid #677e96;
+				transition: all 150ms ease-in-out;
+			}
+
+			.dark .order-btn a {
+				color: #a4d1fd;
+				text-decoration: none;
+				transition: all 150ms ease-in-out;
+			}
+
+			.dark .order-btn a:hover {
+				color: black;
+			}
+
+			.dark .order-btn:hover {
+				background-color: #a4d1fd;
+				transform: scale(1.5);
+			}
+
+			.dark .theme-btn {
+				background-color: white;
+				border: 2px solid black;
+				color: black;
+				transition: all 150ms ease-in-out;
+			}
+
+			.dark .theme-btn:hover {
+				background-color: black;
+				color: white;
+				cursor: pointer;
+				transform: scale(1.5);
+			}
 		</style>
 	</head>
-	<body>
+	<body class="">
 		<button class="theme-btn">Change theme</button>
 		<div class="container">
 			<header>
@@ -126,9 +184,9 @@
 					>
 				</p>
 				<button class="order-btn">
-					<a href="https://hobbii.co.uk/" target="_blank"
-						>Get your yarn right away!</a
-					></button
+					<a href="https://hobbii.co.uk/" target="_blank">
+						Get your yarn right here!
+					</a></button
 				><br />
 				<div class="grid">
 					<a href="https://unsplash.com/photos/zWWDco7uCu0" target="_blank">
@@ -167,5 +225,22 @@
 				</a>
 			</footer>
 		</div>
+
+		<script>
+			function changeTheme() {
+				let body = document.querySelector("body");
+
+				body.classList.toggle("dark");
+
+				/* 				if (body.classList.contains("dark")) {
+					body.classList.remove("dark");
+				} else {
+					body.classList.add("dark");
+				} */
+			}
+
+			let themeBtn = document.querySelector(".theme-btn");
+			themeBtn.addEventListener("click", changeTheme);
+		</script>
 	</body>
 </html>
